@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Data</title>
+    <link rel="stylesheet" href="Bot.css"> <!-- Hubungkan ke file CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>PUTRA NESIA</h1>
+        <p>WA: 085718943744</p>
+
+        <!-- Bagian Hasil Data -->
+        <div class="data-panel">
+            <h2>Hasil Data</h2>
+            <form action="process.php" method="POST">
+                <label for="nik">Nama Hasil</label>
+                <input type="text" id="nik" name="nik" value="RESS FF" readonly>
+                
+                <label for="sender">Tidak Boleh Diubah</label>
+                <input type="text" id="sender" name="sender" value="WANZ@GMAIL.COM" readonly>
+                
+                <button type="submit" class="btn blue">Ganti Data</button>
+            </form>
+        </div>
+
+        <!-- Bagian Data Surel -->
+        <div class="data-panel">
+            <h2>Data Surel</h2>
+            <p>Daftar Email Kalian:</p>
+            <form action="email.php" method="POST">
+                <input type="email" name="email" placeholder="Masukkan email kalian">
+                <button type="submit" class="btn blue" onclick="TambahkanEmail">Tambahkan Email</button>
+                <button type="button" class="btn red" onclick="hapusEmail()">Hapus Email</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="SC.js"></script> <!-- Hubungkan ke file JavaScript -->
+    <script src="SCC.js"></script> <!-- Hubungkan ke file JavaScript -->
+</body>
+</html>
